@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
+        <hibernate-configuration>
+        <session-factory>
+        
+<!--         connection with oracle -->
+        
+          <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property> 
+          <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+          <property name="hibernate.connection.username">system</property>
+          <property name="hibernate.connection.password">manager</property>
+        
+<!--         if need  hibernet property is writen otherwise defult is count -->
+
+<!-- 		mapping resorse -->
+<property name="show_sql">true</property>
+<property name="format_sql">true</property>
+<property name="hbm2dd.auto">update</property>
+
+
+<mapping  resource="com/rk/entity/Product.hbm.xml"/>
+        
+        </session-factory>
+        
+        </hibernate-configuration>
