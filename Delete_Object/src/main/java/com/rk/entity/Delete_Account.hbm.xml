@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	<class name="com.rk.entity.Delete_Account" table="UPDATE_ACCOUNT">
+	
+	<id name="Acc_no" column="ACC_NO"/>
+	
+	<property name="Acc_name" column="ACC_NAME"/>
+	<property name="Acc_add" column="ACC_ADD"/>
+	<property name="Acc_type" column="ACC_TYPE"/>
+	<property name="Acc_bal" column="ACC_BAL"/>
+	
+	</class>
+	
+	</hibernate-mapping>
+	
