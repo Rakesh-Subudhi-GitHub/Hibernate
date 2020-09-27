@@ -1,0 +1,26 @@
+
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'application'
+}
+
+repositories {
+			    jcenter()
+		}
+
+dependencies {
+ 			
+ 			//add some  jars
+ 			
+ // https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2
+implementation group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.7.0'
+ 			
+ 
+ // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.19.Final'
+ 
+ // https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6
+compile group: 'com.oracle.database.jdbc', name: 'ojdbc6', version: '11.2.0.4'
+ 
+ 
+}
