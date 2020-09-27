@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	
+	<class name="com.rk.entity.MobileCustInfo" >
+	
+	<id name="cno">
+	<generator class="sequence"/>
+	</id>
+	
+	<version name="versionCount"  type="int"/>
+	
+	<property name="cname" length="20" type="string"/>
+	<property name="caddrs" length="20" type="string"/>
+	<property name="callerTune" length="20" type="string"/>
+	<property name="Phon"  type="long"/>
+	
+	</class>
+	
+	
+	</hibernate-mapping>
