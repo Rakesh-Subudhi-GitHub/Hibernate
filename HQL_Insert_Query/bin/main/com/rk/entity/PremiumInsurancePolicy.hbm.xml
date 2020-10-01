@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	<class name="com.rk.entity.PremiumInsurancePolicy" table="PremiumInsurance_Policy">
+	
+	<id name="policy_id">
+	<column name="POLICY_ID"/>
+	</id>
+	
+	<property name="policy_name">
+	<column name="POLICY_NAME" length="15"/>
+	</property>
+	
+	<property name="policy_type">
+	<column name="POLICY_TYPE" length="15"/>
+	</property>
+	
+	<property name="company">
+	<column name="COMPANY" length="15"/>
+	</property>
+	
+	<property name="tenure">
+	<column name="TENURE" length="15"/>
+	</property>
+	</class>
+	
+	
+	
+	</hibernate-mapping>

@@ -27,7 +27,7 @@ public class HQL_SelectTest {
 			Query query=ses.createQuery("FROM   com.rk.entity.InsurancePolicy WHERE policy_id= :pid");
 			
 			//set values to query params
-			query.setParameter("pid",200);
+			query.setParameter("pid",100);
 			
 			//execute HQL query
 			List<InsurancePolicy> list=query.getResultList();
