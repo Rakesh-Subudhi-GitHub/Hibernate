@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	<class name="com.rk.entity.InsurancePolicy" table="Insurance_Policy">
+	
+	<id name="policy_id">
+	<column name="POLICY_ID"/>
+	</id>
+	
+	<property name="policy_name">
+	<column name="POLICY_NAME"/>
+	</property>
+	
+	<property name="policy_type">
+	<column name="POLICY_TYPE"/>
+	</property>
+	
+	<property name="company">
+	<column name="COMPANY"/>
+	</property>
+	
+	<property name="tenure">
+	<column name="TENURE"></column>
+	</property>
+	</class>
+	
+	<sql-query name="GET_POLICY_TYPE">
+	<![CDATA[ SELECT POLICY_ID,POLICY_NAME FROM INSURANCE_POLICY WHERE POLICY_TYPE=? ]]>
+	</sql-query>
+	
+	</hibernate-mapping>
