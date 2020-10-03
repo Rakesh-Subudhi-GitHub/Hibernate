@@ -16,7 +16,7 @@ dependencies {
 implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.19.Final'
  
  // https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6
-compile group: 'com.oracle.database.jdbc', name: 'ojdbc6', version: '11.2.0.4'
+implementation group: 'com.oracle.database.jdbc', name: 'ojdbc6', version: '11.2.0.4'
  
  
 }
